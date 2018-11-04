@@ -24,8 +24,13 @@ public class wsServer extends WebSocketServer{
 
 	@Override
 	public void onMessage(WebSocket conn, String message) {
-		// TODO Auto-generated method stub
-		
+		if(message.startsWith("i2cstart")) {
+			conn.send("Starting I2C connection to arduino...");
+			System.out.println("I2C connection to arduino requested for initialization by client(" + conn.getRemoteSocketAddress() + "). Starting connection...");
+		}
+		else {
+			conn.send("Error: Invalid command syntax");
+		}
 	}
 
 	@Override
