@@ -11,6 +11,7 @@ public class headlessClient {
 		try {
 			WebSocketClient client = new wsClient(new URI("ws://192.168.31.243:8887"));
 			client.connect();
+			
 		} catch (URISyntaxException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
