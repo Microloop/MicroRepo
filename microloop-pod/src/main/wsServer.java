@@ -14,8 +14,7 @@ public class wsServer extends WebSocketServer{
 	
 	@Override
 	public void onClose(WebSocket conn, int code, String reason, boolean remote) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Client (" + conn.getRemoteSocketAddress() + ") disconnected from pod with status code " + code + ". Reason: " + reason);
 	}
 
 	@Override

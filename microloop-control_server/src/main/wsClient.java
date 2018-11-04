@@ -24,7 +24,7 @@ public class wsClient extends WebSocketClient{
 
 	@Override
 	public void onMessage(String message) {
-		// TODO Auto-generated method stub
+		System.out.println(message);
 		
 	}
 
@@ -32,7 +32,5 @@ public class wsClient extends WebSocketClient{
 	public void onOpen(ServerHandshake handshakedata) {
 		// TODO Auto-generated method stub
 		System.out.println("Connected to pod at address " + this.getRemoteSocketAddress());
-		handshakedata.getContent().toString();
 	}
-
 }
