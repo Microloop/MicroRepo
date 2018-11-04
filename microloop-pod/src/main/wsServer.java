@@ -31,13 +31,13 @@ public class wsServer extends WebSocketServer{
 
 	@Override
 	public void onOpen(WebSocket conn, ClientHandshake handshake) {
-		// TODO Auto-generated method stub
-		
+		conn.send("Connected to MicroLoop Pod\nSoftware version 0.0.1");
+		System.out.println("Client connected to pod with address " + conn.getRemoteSocketAddress());
 	}
 
 	@Override
 	public void onStart() {
-		System.out.println("Pod server started on address " + this.getAddress() + ':' + this.getPort());
+		System.out.println("Pod server started on address " + this.getAddress());
 	}
 
 }
