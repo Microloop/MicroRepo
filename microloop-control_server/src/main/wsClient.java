@@ -13,8 +13,10 @@ public class wsClient extends WebSocketClient{
 	
 	@Override
 	public void onClose(int code, String reason, boolean remote) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Disconnected from pod with exit code " + code + ". Reason: " + reason);
+		if(code == -1) {
+			System.out.println("The pod server may be down. Try restarting the pod or make sure the server address is correct");
+		}
 	}
 
 	@Override
