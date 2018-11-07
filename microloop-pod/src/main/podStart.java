@@ -13,5 +13,4 @@ public class podStart {
 		WebSocketServer server = new wsServer(new InetSocketAddress(host, port));
 		server.run();
 	}
-
 }
