@@ -5,9 +5,9 @@ import java.net.URI;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 
-public class wsClient extends WebSocketClient{
+public class WSClient extends WebSocketClient{
 
-	public wsClient(URI serverURI) {
+	public WSClient(URI serverURI) {
 		super(serverURI);
 	}
 	

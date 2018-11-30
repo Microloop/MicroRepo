@@ -2,7 +2,7 @@ package main;
 
 import gui.connectWindow;
 
-public class applicationHeader {
+public class ApplicationHeader {
 
 	public static connectWindow addressWindow = new connectWindow();
 	

@@ -6,9 +6,9 @@ import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 import org.java_websocket.server.WebSocketServer;
 
-public class wsServer extends WebSocketServer{
+public class WSServer extends WebSocketServer{
 
-	public wsServer(InetSocketAddress address) {
+	public WSServer(InetSocketAddress address) {
 		super(address);
 	}
 	
